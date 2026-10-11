@@ -2,7 +2,6 @@ require('dotenv').config({ path: require('path').resolve(__dirname, '../.env') }
 const express = require('express');
 const { createRealtimeSession, createChatCompletion } = require('./openaiService');
 const { createGeminiCompletion } = require('./geminiService');
-const { getAudio } = require('ms-tts-api');
 const app = express();
 
 const PORT = process.env.PORT || 3000;
